@@ -25,7 +25,7 @@
         let contador = 0
 
         container.addEventListener('click', (e)=>{
-            console.log(e.target.classList.contains('btn-info'))
+            // console.log(e.target.classList.contains('btn-info'))
             if(e.target.classList.contains('btn-info')){
                 contador ++
                 span.textContent = contador
@@ -34,6 +34,7 @@
                 contador --
                 span.textContent = contador
             }
+            e.stopPropagation()
         })
     </script>
 
