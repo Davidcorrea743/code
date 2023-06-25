@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- Menú Encabezado -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
@@ -16,22 +17,21 @@
             </div>
             <nav id="nav">
             <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#sobremi">SOBRE MI</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#curriculum">CURRICULUM</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#inicio"onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills"onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum"onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio"onclick="seleccionar()">PORTFOLIO</a></li>
+                <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
             </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
     </div>
 
-
-
+<!-- Sección Inicio-->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <!-- Sobre MI -->
+<!-- Sobre MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mi</h2>
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <!-- SKILLS -->
+<!-- SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Skills</h2>
@@ -213,7 +213,7 @@
         </div>
     </section>
     
-    <!-- Curriculum -->
+<!-- Curriculum -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
             <h2>Curriculum</h2>
@@ -222,58 +222,61 @@
                     <h3>Educación</h3>
                     <div class="item izq">
                         <h4>Arte y Multimedia</h4>
-                        <span class="casa">Instituto Universitario de Tecnología Venezuela</span>
-                        <span class="fecha">2010-2014</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit eum excepturi in repudiandae. Deserunt cum quidem ipsa explicabo sit officiis iusto esse tenetur quod! Numquam natus voluptas corporis blanditiis!</p>
+                        <span class="casa">IUTV</span>
+                        <span class="fecha">2010 - 2014</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
+                    <!--  
                     <div class="item izq">
                         <h4>Arte y Multimedia</h4>
-                        <span class="casa">Instituto Universitario de Tecnología Venezuela</span>
-                        <span class="fecha">2010-2014</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit eum excepturi in repudiandae. Deserunt cum quidem ipsa explicabo sit officiis iusto esse tenetur quod! Numquam natus voluptas corporis blanditiis!</p>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
+                    
                     <div class="item izq">
                         <h4>Arte y Multimedia</h4>
-                        <span class="casa">Instituto Universitario de Tecnología Venezuela</span>
-                        <span class="fecha">2010-2014</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit eum excepturi in repudiandae. Deserunt cum quidem ipsa explicabo sit officiis iusto esse tenetur quod! Numquam natus voluptas corporis blanditiis!</p>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
+                    -->
                 </div>
 
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Programador</h4>
-                        <span class="casa">TERAWATT MINING,</span>
-                        <span class="fecha">2021-2022</span>
-                        <p>Python Developer with Django
-                            Análisis de Pools de Minería: comportamiento,
-                            ganancias, entre otros.
-                            Colaboración en la construcción de la página usando
-                            React.js con Material-UI</p>
+                        <h4>Coordinador de Tecnología</h4>
+                        <span class="casa">Inversiones Palmania</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Desarrollador</h4>
-                        <span class="casa">TERAWATT MINING,</span>
-                        <span class="fecha">2015-2021</span>
-                        <p>Main Develop de la página principal del ente
-                            (Frontend WordPress)
-                            Back-end & Front-end en la creación de aplicativo
-                            usando (Python - Django), de Constancias de Trabajo
-                            y Recibos de Pago para el Personal activo (15.500
-                            empleados aproximadamente)</p>
+                        <h4>Developer</h4>
+                        <span class="casa">TeraWatt Mining</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Main Developer</h4>
+                        <span class="casa">SENIFA, ente adscrito al Ministerio del Poder Popular para la Educación</span>
+                        <span class="fecha">2015 - 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -283,7 +286,8 @@
         </div>
     </section>
 
-        <!-- SECCION PORTFOLIO -->
+
+<!-- SECCION PORTFOLIO -->
         <section id="portfolio" class="portfolio">
             <div class="contenido-seccion">
                 <h2>PORTFOLIO</h2>
@@ -334,7 +338,7 @@
             </div>
         </section>
 
-        <!-- SECCION CONTACTO -->
+<!-- SECCION CONTACTO -->
         <section id="contacto" class="contacto">
             <div class="contenido-seccion">
                 <h2>CONTACTO</h2>
@@ -374,7 +378,7 @@
             </div>
         </section>
 
-        <!-- footer -->
+<!-- footer -->
         <footer>
             <a href="#inicio" class="arriba">
                 <i class="fa-solid fa-angles-up"></i>
@@ -385,7 +389,7 @@
                 <a href="#"><i class="fa-solid fa-rss"></i></a>
             </div>
         </footer>
-
+<script src="scripts.js"></script>
 
 </body>
 </html>
